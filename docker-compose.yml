@@ -1,0 +1,37 @@
+version: "3.9"
+services:
+  api:
+    build: ./services/api
+    ports:
+      - "4000:4000"
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      JWT_SECRET: carelink-dev-secret-change-in-prod
+      DATABASE_URL: postgresql://carelink:carelink@db:5432/carelink
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - db
+      - redis
+  web:
+    build: ./apps/web
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: carelink
+      POSTGRES_PASSWORD: carelink
+      POSTGRES_DB: carelink
+    ports:
+      - "5432:5432"
+    volumes:
+      - carelink_pg:/var/lib/postgresql/data
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+volumes:
+  carelink_pg:

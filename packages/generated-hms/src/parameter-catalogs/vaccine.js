@@ -1,0 +1,77 @@
+'use strict';
+// Complete parameter catalog for vaccine.
+const entity='vaccine';
+const parameters=[
+  { name: 'patientId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for vaccine', index: 1 },
+  { name: 'patientId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for vaccine', index: 1 },
+  { name: 'patientId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'patientId parameter for vaccine', index: 1 },
+  { name: 'patientId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for vaccine', index: 1 },
+  { name: 'patientId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'patientId parameter for vaccine', index: 1 },
+  { name: 'patientIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum patientId filter for vaccine', index: 1 },
+  { name: 'patientIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum patientId filter for vaccine', index: 1 },
+  { name: 'vaccineCode', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'vaccineCode parameter for vaccine', index: 2 },
+  { name: 'vaccineCode', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'vaccineCode parameter for vaccine', index: 2 },
+  { name: 'vaccineCode', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'vaccineCode parameter for vaccine', index: 2 },
+  { name: 'vaccineCode', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'vaccineCode parameter for vaccine', index: 2 },
+  { name: 'vaccineCode', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'vaccineCode parameter for vaccine', index: 2 },
+  { name: 'vaccineCodeMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum vaccineCode filter for vaccine', index: 2 },
+  { name: 'vaccineCodeMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum vaccineCode filter for vaccine', index: 2 },
+  { name: 'name', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'name parameter for vaccine', index: 3 },
+  { name: 'name', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'name parameter for vaccine', index: 3 },
+  { name: 'name', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'name parameter for vaccine', index: 3 },
+  { name: 'name', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'name parameter for vaccine', index: 3 },
+  { name: 'name', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'name parameter for vaccine', index: 3 },
+  { name: 'nameMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum name filter for vaccine', index: 3 },
+  { name: 'nameMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum name filter for vaccine', index: 3 },
+  { name: 'doseNumber', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'doseNumber parameter for vaccine', index: 4 },
+  { name: 'doseNumber', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'doseNumber parameter for vaccine', index: 4 },
+  { name: 'doseNumber', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'doseNumber parameter for vaccine', index: 4 },
+  { name: 'doseNumber', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'doseNumber parameter for vaccine', index: 4 },
+  { name: 'doseNumber', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'doseNumber parameter for vaccine', index: 4 },
+  { name: 'doseNumberMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum doseNumber filter for vaccine', index: 4 },
+  { name: 'doseNumberMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum doseNumber filter for vaccine', index: 4 },
+  { name: 'administeredAt', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredAt parameter for vaccine', index: 5 },
+  { name: 'administeredAt', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredAt parameter for vaccine', index: 5 },
+  { name: 'administeredAt', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'administeredAt parameter for vaccine', index: 5 },
+  { name: 'administeredAt', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredAt parameter for vaccine', index: 5 },
+  { name: 'administeredAt', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'administeredAt parameter for vaccine', index: 5 },
+  { name: 'administeredAtMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum administeredAt filter for vaccine', index: 5 },
+  { name: 'administeredAtMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum administeredAt filter for vaccine', index: 5 },
+  { name: 'lotNumber', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'lotNumber parameter for vaccine', index: 6 },
+  { name: 'lotNumber', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'lotNumber parameter for vaccine', index: 6 },
+  { name: 'lotNumber', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'lotNumber parameter for vaccine', index: 6 },
+  { name: 'lotNumber', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'lotNumber parameter for vaccine', index: 6 },
+  { name: 'lotNumber', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'lotNumber parameter for vaccine', index: 6 },
+  { name: 'lotNumberMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum lotNumber filter for vaccine', index: 6 },
+  { name: 'lotNumberMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum lotNumber filter for vaccine', index: 6 },
+  { name: 'site', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'site parameter for vaccine', index: 7 },
+  { name: 'site', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'site parameter for vaccine', index: 7 },
+  { name: 'site', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'site parameter for vaccine', index: 7 },
+  { name: 'site', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'site parameter for vaccine', index: 7 },
+  { name: 'site', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'site parameter for vaccine', index: 7 },
+  { name: 'siteMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum site filter for vaccine', index: 7 },
+  { name: 'siteMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum site filter for vaccine', index: 7 },
+  { name: 'administeredBy', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredBy parameter for vaccine', index: 8 },
+  { name: 'administeredBy', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredBy parameter for vaccine', index: 8 },
+  { name: 'administeredBy', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'administeredBy parameter for vaccine', index: 8 },
+  { name: 'administeredBy', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredBy parameter for vaccine', index: 8 },
+  { name: 'administeredBy', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'administeredBy parameter for vaccine', index: 8 },
+  { name: 'administeredByMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum administeredBy filter for vaccine', index: 8 },
+  { name: 'administeredByMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum administeredBy filter for vaccine', index: 8 },
+  { name: 'nextDueDate', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'nextDueDate parameter for vaccine', index: 9 },
+  { name: 'nextDueDate', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'nextDueDate parameter for vaccine', index: 9 },
+  { name: 'nextDueDate', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'nextDueDate parameter for vaccine', index: 9 },
+  { name: 'nextDueDate', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'nextDueDate parameter for vaccine', index: 9 },
+  { name: 'nextDueDate', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'nextDueDate parameter for vaccine', index: 9 },
+  { name: 'nextDueDateMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum nextDueDate filter for vaccine', index: 9 },
+  { name: 'nextDueDateMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum nextDueDate filter for vaccine', index: 9 },
+];
+
+function get(name){return parameters.find(p=>p.name===name)||null;}
+function list(mode){return mode?parameters.filter(p=>p.mode===mode):[...parameters];}
+function required(){return parameters.filter(p=>p.required);}
+function validateParameter(name,value){const p=get(name);if(!p)return {ok:false,code:'UNKNOWN_PARAMETER'};if(value===null&&p.nullable)return {ok:true};if(p.type==='number'&&typeof value!=='number')return {ok:false,code:'TYPE_ERROR'};if(p.type==='boolean'&&typeof value!=='boolean')return {ok:false,code:'TYPE_ERROR'};if(p.type==='string'&&typeof value!=='string')return {ok:false,code:'TYPE_ERROR'};return {ok:true};}
+function validateObject(input={}){const errors=[];for(const p of required()){if(input[p.name]===undefined||input[p.name]===null||input[p.name]==='')errors.push({field:p.name,code:'REQUIRED'});}for(const [k,v] of Object.entries(input)){const result=validateParameter(k,v);if(!result.ok)errors.push({field:k,code:result.code});}return errors;}
+function defaults(){return Object.fromEntries(parameters.filter(p=>p.defaultValue!==null).map(p=>[p.name,p.defaultValue]));}
+function describe(){return {entity,parameterCount:parameters.length,parameters};}
+module.exports={entity,parameters,get,list,required,validateParameter,validateObject,defaults,describe};

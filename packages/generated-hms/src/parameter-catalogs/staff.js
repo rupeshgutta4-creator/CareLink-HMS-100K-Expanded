@@ -1,0 +1,77 @@
+'use strict';
+// Complete parameter catalog for staff.
+const entity='staff';
+const parameters=[
+  { name: 'employeeId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'employeeId parameter for staff', index: 1 },
+  { name: 'employeeId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'employeeId parameter for staff', index: 1 },
+  { name: 'employeeId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'employeeId parameter for staff', index: 1 },
+  { name: 'employeeId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'employeeId parameter for staff', index: 1 },
+  { name: 'employeeId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'employeeId parameter for staff', index: 1 },
+  { name: 'employeeIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum employeeId filter for staff', index: 1 },
+  { name: 'employeeIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum employeeId filter for staff', index: 1 },
+  { name: 'firstName', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'firstName parameter for staff', index: 2 },
+  { name: 'firstName', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'firstName parameter for staff', index: 2 },
+  { name: 'firstName', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'firstName parameter for staff', index: 2 },
+  { name: 'firstName', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'firstName parameter for staff', index: 2 },
+  { name: 'firstName', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'firstName parameter for staff', index: 2 },
+  { name: 'firstNameMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum firstName filter for staff', index: 2 },
+  { name: 'firstNameMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum firstName filter for staff', index: 2 },
+  { name: 'lastName', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'lastName parameter for staff', index: 3 },
+  { name: 'lastName', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'lastName parameter for staff', index: 3 },
+  { name: 'lastName', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'lastName parameter for staff', index: 3 },
+  { name: 'lastName', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'lastName parameter for staff', index: 3 },
+  { name: 'lastName', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'lastName parameter for staff', index: 3 },
+  { name: 'lastNameMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum lastName filter for staff', index: 3 },
+  { name: 'lastNameMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum lastName filter for staff', index: 3 },
+  { name: 'role', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'role parameter for staff', index: 4 },
+  { name: 'role', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'role parameter for staff', index: 4 },
+  { name: 'role', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'role parameter for staff', index: 4 },
+  { name: 'role', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'role parameter for staff', index: 4 },
+  { name: 'role', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'role parameter for staff', index: 4 },
+  { name: 'roleMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum role filter for staff', index: 4 },
+  { name: 'roleMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum role filter for staff', index: 4 },
+  { name: 'departmentId', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'departmentId parameter for staff', index: 5 },
+  { name: 'departmentId', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'departmentId parameter for staff', index: 5 },
+  { name: 'departmentId', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'departmentId parameter for staff', index: 5 },
+  { name: 'departmentId', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'departmentId parameter for staff', index: 5 },
+  { name: 'departmentId', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'departmentId parameter for staff', index: 5 },
+  { name: 'departmentIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum departmentId filter for staff', index: 5 },
+  { name: 'departmentIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum departmentId filter for staff', index: 5 },
+  { name: 'phone', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'phone parameter for staff', index: 6 },
+  { name: 'phone', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'phone parameter for staff', index: 6 },
+  { name: 'phone', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'phone parameter for staff', index: 6 },
+  { name: 'phone', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'phone parameter for staff', index: 6 },
+  { name: 'phone', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'phone parameter for staff', index: 6 },
+  { name: 'phoneMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum phone filter for staff', index: 6 },
+  { name: 'phoneMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum phone filter for staff', index: 6 },
+  { name: 'email', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'email parameter for staff', index: 7 },
+  { name: 'email', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'email parameter for staff', index: 7 },
+  { name: 'email', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'email parameter for staff', index: 7 },
+  { name: 'email', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'email parameter for staff', index: 7 },
+  { name: 'email', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'email parameter for staff', index: 7 },
+  { name: 'emailMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum email filter for staff', index: 7 },
+  { name: 'emailMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum email filter for staff', index: 7 },
+  { name: 'joiningDate', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'joiningDate parameter for staff', index: 8 },
+  { name: 'joiningDate', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'joiningDate parameter for staff', index: 8 },
+  { name: 'joiningDate', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'joiningDate parameter for staff', index: 8 },
+  { name: 'joiningDate', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'joiningDate parameter for staff', index: 8 },
+  { name: 'joiningDate', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'joiningDate parameter for staff', index: 8 },
+  { name: 'joiningDateMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum joiningDate filter for staff', index: 8 },
+  { name: 'joiningDateMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum joiningDate filter for staff', index: 8 },
+  { name: 'status', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for staff', index: 9 },
+  { name: 'status', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for staff', index: 9 },
+  { name: 'status', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for staff', index: 9 },
+  { name: 'status', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for staff', index: 9 },
+  { name: 'status', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for staff', index: 9 },
+  { name: 'statusMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum status filter for staff', index: 9 },
+  { name: 'statusMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum status filter for staff', index: 9 },
+];
+
+function get(name){return parameters.find(p=>p.name===name)||null;}
+function list(mode){return mode?parameters.filter(p=>p.mode===mode):[...parameters];}
+function required(){return parameters.filter(p=>p.required);}
+function validateParameter(name,value){const p=get(name);if(!p)return {ok:false,code:'UNKNOWN_PARAMETER'};if(value===null&&p.nullable)return {ok:true};if(p.type==='number'&&typeof value!=='number')return {ok:false,code:'TYPE_ERROR'};if(p.type==='boolean'&&typeof value!=='boolean')return {ok:false,code:'TYPE_ERROR'};if(p.type==='string'&&typeof value!=='string')return {ok:false,code:'TYPE_ERROR'};return {ok:true};}
+function validateObject(input={}){const errors=[];for(const p of required()){if(input[p.name]===undefined||input[p.name]===null||input[p.name]==='')errors.push({field:p.name,code:'REQUIRED'});}for(const [k,v] of Object.entries(input)){const result=validateParameter(k,v);if(!result.ok)errors.push({field:k,code:result.code});}return errors;}
+function defaults(){return Object.fromEntries(parameters.filter(p=>p.defaultValue!==null).map(p=>[p.name,p.defaultValue]));}
+function describe(){return {entity,parameterCount:parameters.length,parameters};}
+module.exports={entity,parameters,get,list,required,validateParameter,validateObject,defaults,describe};

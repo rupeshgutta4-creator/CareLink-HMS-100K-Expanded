@@ -1,0 +1,77 @@
+'use strict';
+// Complete parameter catalog for equipment.
+const entity='equipment';
+const parameters=[
+  { name: 'assetCode', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'assetCode parameter for equipment', index: 1 },
+  { name: 'assetCode', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'assetCode parameter for equipment', index: 1 },
+  { name: 'assetCode', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'assetCode parameter for equipment', index: 1 },
+  { name: 'assetCode', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'assetCode parameter for equipment', index: 1 },
+  { name: 'assetCode', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'assetCode parameter for equipment', index: 1 },
+  { name: 'assetCodeMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum assetCode filter for equipment', index: 1 },
+  { name: 'assetCodeMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum assetCode filter for equipment', index: 1 },
+  { name: 'name', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'name parameter for equipment', index: 2 },
+  { name: 'name', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'name parameter for equipment', index: 2 },
+  { name: 'name', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'name parameter for equipment', index: 2 },
+  { name: 'name', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'name parameter for equipment', index: 2 },
+  { name: 'name', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'name parameter for equipment', index: 2 },
+  { name: 'nameMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum name filter for equipment', index: 2 },
+  { name: 'nameMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum name filter for equipment', index: 2 },
+  { name: 'category', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'category parameter for equipment', index: 3 },
+  { name: 'category', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'category parameter for equipment', index: 3 },
+  { name: 'category', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'category parameter for equipment', index: 3 },
+  { name: 'category', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'category parameter for equipment', index: 3 },
+  { name: 'category', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'category parameter for equipment', index: 3 },
+  { name: 'categoryMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum category filter for equipment', index: 3 },
+  { name: 'categoryMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum category filter for equipment', index: 3 },
+  { name: 'serialNumber', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'serialNumber parameter for equipment', index: 4 },
+  { name: 'serialNumber', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'serialNumber parameter for equipment', index: 4 },
+  { name: 'serialNumber', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'serialNumber parameter for equipment', index: 4 },
+  { name: 'serialNumber', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'serialNumber parameter for equipment', index: 4 },
+  { name: 'serialNumber', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'serialNumber parameter for equipment', index: 4 },
+  { name: 'serialNumberMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum serialNumber filter for equipment', index: 4 },
+  { name: 'serialNumberMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum serialNumber filter for equipment', index: 4 },
+  { name: 'location', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'location parameter for equipment', index: 5 },
+  { name: 'location', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'location parameter for equipment', index: 5 },
+  { name: 'location', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'location parameter for equipment', index: 5 },
+  { name: 'location', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'location parameter for equipment', index: 5 },
+  { name: 'location', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'location parameter for equipment', index: 5 },
+  { name: 'locationMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum location filter for equipment', index: 5 },
+  { name: 'locationMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum location filter for equipment', index: 5 },
+  { name: 'purchaseDate', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'purchaseDate parameter for equipment', index: 6 },
+  { name: 'purchaseDate', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'purchaseDate parameter for equipment', index: 6 },
+  { name: 'purchaseDate', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'purchaseDate parameter for equipment', index: 6 },
+  { name: 'purchaseDate', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'purchaseDate parameter for equipment', index: 6 },
+  { name: 'purchaseDate', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'purchaseDate parameter for equipment', index: 6 },
+  { name: 'purchaseDateMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum purchaseDate filter for equipment', index: 6 },
+  { name: 'purchaseDateMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum purchaseDate filter for equipment', index: 6 },
+  { name: 'warrantyEnd', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'warrantyEnd parameter for equipment', index: 7 },
+  { name: 'warrantyEnd', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'warrantyEnd parameter for equipment', index: 7 },
+  { name: 'warrantyEnd', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'warrantyEnd parameter for equipment', index: 7 },
+  { name: 'warrantyEnd', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'warrantyEnd parameter for equipment', index: 7 },
+  { name: 'warrantyEnd', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'warrantyEnd parameter for equipment', index: 7 },
+  { name: 'warrantyEndMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum warrantyEnd filter for equipment', index: 7 },
+  { name: 'warrantyEndMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum warrantyEnd filter for equipment', index: 7 },
+  { name: 'maintenanceDue', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'maintenanceDue parameter for equipment', index: 8 },
+  { name: 'maintenanceDue', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'maintenanceDue parameter for equipment', index: 8 },
+  { name: 'maintenanceDue', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'maintenanceDue parameter for equipment', index: 8 },
+  { name: 'maintenanceDue', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'maintenanceDue parameter for equipment', index: 8 },
+  { name: 'maintenanceDue', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'maintenanceDue parameter for equipment', index: 8 },
+  { name: 'maintenanceDueMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum maintenanceDue filter for equipment', index: 8 },
+  { name: 'maintenanceDueMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum maintenanceDue filter for equipment', index: 8 },
+  { name: 'status', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for equipment', index: 9 },
+  { name: 'status', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for equipment', index: 9 },
+  { name: 'status', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for equipment', index: 9 },
+  { name: 'status', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for equipment', index: 9 },
+  { name: 'status', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for equipment', index: 9 },
+  { name: 'statusMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum status filter for equipment', index: 9 },
+  { name: 'statusMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum status filter for equipment', index: 9 },
+];
+
+function get(name){return parameters.find(p=>p.name===name)||null;}
+function list(mode){return mode?parameters.filter(p=>p.mode===mode):[...parameters];}
+function required(){return parameters.filter(p=>p.required);}
+function validateParameter(name,value){const p=get(name);if(!p)return {ok:false,code:'UNKNOWN_PARAMETER'};if(value===null&&p.nullable)return {ok:true};if(p.type==='number'&&typeof value!=='number')return {ok:false,code:'TYPE_ERROR'};if(p.type==='boolean'&&typeof value!=='boolean')return {ok:false,code:'TYPE_ERROR'};if(p.type==='string'&&typeof value!=='string')return {ok:false,code:'TYPE_ERROR'};return {ok:true};}
+function validateObject(input={}){const errors=[];for(const p of required()){if(input[p.name]===undefined||input[p.name]===null||input[p.name]==='')errors.push({field:p.name,code:'REQUIRED'});}for(const [k,v] of Object.entries(input)){const result=validateParameter(k,v);if(!result.ok)errors.push({field:k,code:result.code});}return errors;}
+function defaults(){return Object.fromEntries(parameters.filter(p=>p.defaultValue!==null).map(p=>[p.name,p.defaultValue]));}
+function describe(){return {entity,parameterCount:parameters.length,parameters};}
+module.exports={entity,parameters,get,list,required,validateParameter,validateObject,defaults,describe};

@@ -1,0 +1,77 @@
+'use strict';
+// Complete parameter catalog for clinicalAlert.
+const entity='clinicalAlert';
+const parameters=[
+  { name: 'patientId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for clinicalAlert', index: 1 },
+  { name: 'patientId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for clinicalAlert', index: 1 },
+  { name: 'patientId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'patientId parameter for clinicalAlert', index: 1 },
+  { name: 'patientId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for clinicalAlert', index: 1 },
+  { name: 'patientId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'patientId parameter for clinicalAlert', index: 1 },
+  { name: 'patientIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum patientId filter for clinicalAlert', index: 1 },
+  { name: 'patientIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum patientId filter for clinicalAlert', index: 1 },
+  { name: 'type', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'type parameter for clinicalAlert', index: 2 },
+  { name: 'type', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'type parameter for clinicalAlert', index: 2 },
+  { name: 'type', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'type parameter for clinicalAlert', index: 2 },
+  { name: 'type', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'type parameter for clinicalAlert', index: 2 },
+  { name: 'type', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'type parameter for clinicalAlert', index: 2 },
+  { name: 'typeMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum type filter for clinicalAlert', index: 2 },
+  { name: 'typeMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum type filter for clinicalAlert', index: 2 },
+  { name: 'severity', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'severity parameter for clinicalAlert', index: 3 },
+  { name: 'severity', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'severity parameter for clinicalAlert', index: 3 },
+  { name: 'severity', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'severity parameter for clinicalAlert', index: 3 },
+  { name: 'severity', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'severity parameter for clinicalAlert', index: 3 },
+  { name: 'severity', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'severity parameter for clinicalAlert', index: 3 },
+  { name: 'severityMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum severity filter for clinicalAlert', index: 3 },
+  { name: 'severityMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum severity filter for clinicalAlert', index: 3 },
+  { name: 'message', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'message parameter for clinicalAlert', index: 4 },
+  { name: 'message', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'message parameter for clinicalAlert', index: 4 },
+  { name: 'message', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'message parameter for clinicalAlert', index: 4 },
+  { name: 'message', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'message parameter for clinicalAlert', index: 4 },
+  { name: 'message', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'message parameter for clinicalAlert', index: 4 },
+  { name: 'messageMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum message filter for clinicalAlert', index: 4 },
+  { name: 'messageMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum message filter for clinicalAlert', index: 4 },
+  { name: 'trigger', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'trigger parameter for clinicalAlert', index: 5 },
+  { name: 'trigger', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'trigger parameter for clinicalAlert', index: 5 },
+  { name: 'trigger', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'trigger parameter for clinicalAlert', index: 5 },
+  { name: 'trigger', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'trigger parameter for clinicalAlert', index: 5 },
+  { name: 'trigger', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'trigger parameter for clinicalAlert', index: 5 },
+  { name: 'triggerMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum trigger filter for clinicalAlert', index: 5 },
+  { name: 'triggerMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum trigger filter for clinicalAlert', index: 5 },
+  { name: 'createdAt', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'createdAt parameter for clinicalAlert', index: 6 },
+  { name: 'createdAt', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'createdAt parameter for clinicalAlert', index: 6 },
+  { name: 'createdAt', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'createdAt parameter for clinicalAlert', index: 6 },
+  { name: 'createdAt', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'createdAt parameter for clinicalAlert', index: 6 },
+  { name: 'createdAt', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'createdAt parameter for clinicalAlert', index: 6 },
+  { name: 'createdAtMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum createdAt filter for clinicalAlert', index: 6 },
+  { name: 'createdAtMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum createdAt filter for clinicalAlert', index: 6 },
+  { name: 'acknowledgedAt', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'acknowledgedAt parameter for clinicalAlert', index: 7 },
+  { name: 'acknowledgedAt', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'acknowledgedAt parameter for clinicalAlert', index: 7 },
+  { name: 'acknowledgedAt', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'acknowledgedAt parameter for clinicalAlert', index: 7 },
+  { name: 'acknowledgedAt', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'acknowledgedAt parameter for clinicalAlert', index: 7 },
+  { name: 'acknowledgedAt', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'acknowledgedAt parameter for clinicalAlert', index: 7 },
+  { name: 'acknowledgedAtMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum acknowledgedAt filter for clinicalAlert', index: 7 },
+  { name: 'acknowledgedAtMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum acknowledgedAt filter for clinicalAlert', index: 7 },
+  { name: 'acknowledgedBy', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'acknowledgedBy parameter for clinicalAlert', index: 8 },
+  { name: 'acknowledgedBy', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'acknowledgedBy parameter for clinicalAlert', index: 8 },
+  { name: 'acknowledgedBy', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'acknowledgedBy parameter for clinicalAlert', index: 8 },
+  { name: 'acknowledgedBy', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'acknowledgedBy parameter for clinicalAlert', index: 8 },
+  { name: 'acknowledgedBy', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'acknowledgedBy parameter for clinicalAlert', index: 8 },
+  { name: 'acknowledgedByMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum acknowledgedBy filter for clinicalAlert', index: 8 },
+  { name: 'acknowledgedByMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum acknowledgedBy filter for clinicalAlert', index: 8 },
+  { name: 'status', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for clinicalAlert', index: 9 },
+  { name: 'status', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for clinicalAlert', index: 9 },
+  { name: 'status', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for clinicalAlert', index: 9 },
+  { name: 'status', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for clinicalAlert', index: 9 },
+  { name: 'status', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for clinicalAlert', index: 9 },
+  { name: 'statusMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum status filter for clinicalAlert', index: 9 },
+  { name: 'statusMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum status filter for clinicalAlert', index: 9 },
+];
+
+function get(name){return parameters.find(p=>p.name===name)||null;}
+function list(mode){return mode?parameters.filter(p=>p.mode===mode):[...parameters];}
+function required(){return parameters.filter(p=>p.required);}
+function validateParameter(name,value){const p=get(name);if(!p)return {ok:false,code:'UNKNOWN_PARAMETER'};if(value===null&&p.nullable)return {ok:true};if(p.type==='number'&&typeof value!=='number')return {ok:false,code:'TYPE_ERROR'};if(p.type==='boolean'&&typeof value!=='boolean')return {ok:false,code:'TYPE_ERROR'};if(p.type==='string'&&typeof value!=='string')return {ok:false,code:'TYPE_ERROR'};return {ok:true};}
+function validateObject(input={}){const errors=[];for(const p of required()){if(input[p.name]===undefined||input[p.name]===null||input[p.name]==='')errors.push({field:p.name,code:'REQUIRED'});}for(const [k,v] of Object.entries(input)){const result=validateParameter(k,v);if(!result.ok)errors.push({field:k,code:result.code});}return errors;}
+function defaults(){return Object.fromEntries(parameters.filter(p=>p.defaultValue!==null).map(p=>[p.name,p.defaultValue]));}
+function describe(){return {entity,parameterCount:parameters.length,parameters};}
+module.exports={entity,parameters,get,list,required,validateParameter,validateObject,defaults,describe};

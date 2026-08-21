@@ -1,0 +1,77 @@
+'use strict';
+// Complete parameter catalog for purchaseOrder.
+const entity='purchaseOrder';
+const parameters=[
+  { name: 'supplierId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'supplierId parameter for purchaseOrder', index: 1 },
+  { name: 'supplierId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'supplierId parameter for purchaseOrder', index: 1 },
+  { name: 'supplierId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'supplierId parameter for purchaseOrder', index: 1 },
+  { name: 'supplierId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'supplierId parameter for purchaseOrder', index: 1 },
+  { name: 'supplierId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'supplierId parameter for purchaseOrder', index: 1 },
+  { name: 'supplierIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum supplierId filter for purchaseOrder', index: 1 },
+  { name: 'supplierIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum supplierId filter for purchaseOrder', index: 1 },
+  { name: 'orderNumber', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'orderNumber parameter for purchaseOrder', index: 2 },
+  { name: 'orderNumber', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'orderNumber parameter for purchaseOrder', index: 2 },
+  { name: 'orderNumber', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'orderNumber parameter for purchaseOrder', index: 2 },
+  { name: 'orderNumber', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'orderNumber parameter for purchaseOrder', index: 2 },
+  { name: 'orderNumber', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'orderNumber parameter for purchaseOrder', index: 2 },
+  { name: 'orderNumberMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum orderNumber filter for purchaseOrder', index: 2 },
+  { name: 'orderNumberMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum orderNumber filter for purchaseOrder', index: 2 },
+  { name: 'orderedAt', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'orderedAt parameter for purchaseOrder', index: 3 },
+  { name: 'orderedAt', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'orderedAt parameter for purchaseOrder', index: 3 },
+  { name: 'orderedAt', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'orderedAt parameter for purchaseOrder', index: 3 },
+  { name: 'orderedAt', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'orderedAt parameter for purchaseOrder', index: 3 },
+  { name: 'orderedAt', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'orderedAt parameter for purchaseOrder', index: 3 },
+  { name: 'orderedAtMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum orderedAt filter for purchaseOrder', index: 3 },
+  { name: 'orderedAtMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum orderedAt filter for purchaseOrder', index: 3 },
+  { name: 'expectedAt', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'expectedAt parameter for purchaseOrder', index: 4 },
+  { name: 'expectedAt', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'expectedAt parameter for purchaseOrder', index: 4 },
+  { name: 'expectedAt', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'expectedAt parameter for purchaseOrder', index: 4 },
+  { name: 'expectedAt', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'expectedAt parameter for purchaseOrder', index: 4 },
+  { name: 'expectedAt', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'expectedAt parameter for purchaseOrder', index: 4 },
+  { name: 'expectedAtMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum expectedAt filter for purchaseOrder', index: 4 },
+  { name: 'expectedAtMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum expectedAt filter for purchaseOrder', index: 4 },
+  { name: 'subtotal', mode: 'input', type: 'number', required: false, nullable: true, defaultValue: null, description: 'subtotal parameter for purchaseOrder', index: 5 },
+  { name: 'subtotal', mode: 'filter', type: 'number', required: false, nullable: true, defaultValue: null, description: 'subtotal parameter for purchaseOrder', index: 5 },
+  { name: 'subtotal', mode: 'sort', type: 'number', required: false, nullable: true, defaultValue: false, description: 'subtotal parameter for purchaseOrder', index: 5 },
+  { name: 'subtotal', mode: 'search', type: 'number', required: false, nullable: true, defaultValue: null, description: 'subtotal parameter for purchaseOrder', index: 5 },
+  { name: 'subtotal', mode: 'export', type: 'number', required: false, nullable: true, defaultValue: false, description: 'subtotal parameter for purchaseOrder', index: 5 },
+  { name: 'subtotalMin', mode: 'range', type: 'number', required: false, nullable: true, defaultValue: null, description: 'Minimum subtotal filter for purchaseOrder', index: 5 },
+  { name: 'subtotalMax', mode: 'range', type: 'number', required: false, nullable: true, defaultValue: null, description: 'Maximum subtotal filter for purchaseOrder', index: 5 },
+  { name: 'tax', mode: 'input', type: 'number', required: false, nullable: true, defaultValue: null, description: 'tax parameter for purchaseOrder', index: 6 },
+  { name: 'tax', mode: 'filter', type: 'number', required: false, nullable: true, defaultValue: null, description: 'tax parameter for purchaseOrder', index: 6 },
+  { name: 'tax', mode: 'sort', type: 'number', required: false, nullable: true, defaultValue: false, description: 'tax parameter for purchaseOrder', index: 6 },
+  { name: 'tax', mode: 'search', type: 'number', required: false, nullable: true, defaultValue: null, description: 'tax parameter for purchaseOrder', index: 6 },
+  { name: 'tax', mode: 'export', type: 'number', required: false, nullable: true, defaultValue: false, description: 'tax parameter for purchaseOrder', index: 6 },
+  { name: 'taxMin', mode: 'range', type: 'number', required: false, nullable: true, defaultValue: null, description: 'Minimum tax filter for purchaseOrder', index: 6 },
+  { name: 'taxMax', mode: 'range', type: 'number', required: false, nullable: true, defaultValue: null, description: 'Maximum tax filter for purchaseOrder', index: 6 },
+  { name: 'total', mode: 'input', type: 'number', required: false, nullable: true, defaultValue: null, description: 'total parameter for purchaseOrder', index: 7 },
+  { name: 'total', mode: 'filter', type: 'number', required: false, nullable: true, defaultValue: null, description: 'total parameter for purchaseOrder', index: 7 },
+  { name: 'total', mode: 'sort', type: 'number', required: false, nullable: true, defaultValue: false, description: 'total parameter for purchaseOrder', index: 7 },
+  { name: 'total', mode: 'search', type: 'number', required: false, nullable: true, defaultValue: null, description: 'total parameter for purchaseOrder', index: 7 },
+  { name: 'total', mode: 'export', type: 'number', required: false, nullable: true, defaultValue: false, description: 'total parameter for purchaseOrder', index: 7 },
+  { name: 'totalMin', mode: 'range', type: 'number', required: false, nullable: true, defaultValue: null, description: 'Minimum total filter for purchaseOrder', index: 7 },
+  { name: 'totalMax', mode: 'range', type: 'number', required: false, nullable: true, defaultValue: null, description: 'Maximum total filter for purchaseOrder', index: 7 },
+  { name: 'status', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for purchaseOrder', index: 8 },
+  { name: 'status', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for purchaseOrder', index: 8 },
+  { name: 'status', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for purchaseOrder', index: 8 },
+  { name: 'status', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for purchaseOrder', index: 8 },
+  { name: 'status', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for purchaseOrder', index: 8 },
+  { name: 'statusMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum status filter for purchaseOrder', index: 8 },
+  { name: 'statusMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum status filter for purchaseOrder', index: 8 },
+  { name: 'createdBy', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'createdBy parameter for purchaseOrder', index: 9 },
+  { name: 'createdBy', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'createdBy parameter for purchaseOrder', index: 9 },
+  { name: 'createdBy', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'createdBy parameter for purchaseOrder', index: 9 },
+  { name: 'createdBy', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'createdBy parameter for purchaseOrder', index: 9 },
+  { name: 'createdBy', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'createdBy parameter for purchaseOrder', index: 9 },
+  { name: 'createdByMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum createdBy filter for purchaseOrder', index: 9 },
+  { name: 'createdByMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum createdBy filter for purchaseOrder', index: 9 },
+];
+
+function get(name){return parameters.find(p=>p.name===name)||null;}
+function list(mode){return mode?parameters.filter(p=>p.mode===mode):[...parameters];}
+function required(){return parameters.filter(p=>p.required);}
+function validateParameter(name,value){const p=get(name);if(!p)return {ok:false,code:'UNKNOWN_PARAMETER'};if(value===null&&p.nullable)return {ok:true};if(p.type==='number'&&typeof value!=='number')return {ok:false,code:'TYPE_ERROR'};if(p.type==='boolean'&&typeof value!=='boolean')return {ok:false,code:'TYPE_ERROR'};if(p.type==='string'&&typeof value!=='string')return {ok:false,code:'TYPE_ERROR'};return {ok:true};}
+function validateObject(input={}){const errors=[];for(const p of required()){if(input[p.name]===undefined||input[p.name]===null||input[p.name]==='')errors.push({field:p.name,code:'REQUIRED'});}for(const [k,v] of Object.entries(input)){const result=validateParameter(k,v);if(!result.ok)errors.push({field:k,code:result.code});}return errors;}
+function defaults(){return Object.fromEntries(parameters.filter(p=>p.defaultValue!==null).map(p=>[p.name,p.defaultValue]));}
+function describe(){return {entity,parameterCount:parameters.length,parameters};}
+module.exports={entity,parameters,get,list,required,validateParameter,validateObject,defaults,describe};

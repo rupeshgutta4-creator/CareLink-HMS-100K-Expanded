@@ -1,0 +1,77 @@
+'use strict';
+// Complete parameter catalog for auditLog.
+const entity='auditLog';
+const parameters=[
+  { name: 'actorId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'actorId parameter for auditLog', index: 1 },
+  { name: 'actorId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'actorId parameter for auditLog', index: 1 },
+  { name: 'actorId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'actorId parameter for auditLog', index: 1 },
+  { name: 'actorId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'actorId parameter for auditLog', index: 1 },
+  { name: 'actorId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'actorId parameter for auditLog', index: 1 },
+  { name: 'actorIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum actorId filter for auditLog', index: 1 },
+  { name: 'actorIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum actorId filter for auditLog', index: 1 },
+  { name: 'action', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'action parameter for auditLog', index: 2 },
+  { name: 'action', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'action parameter for auditLog', index: 2 },
+  { name: 'action', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'action parameter for auditLog', index: 2 },
+  { name: 'action', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'action parameter for auditLog', index: 2 },
+  { name: 'action', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'action parameter for auditLog', index: 2 },
+  { name: 'actionMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum action filter for auditLog', index: 2 },
+  { name: 'actionMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum action filter for auditLog', index: 2 },
+  { name: 'entity', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'entity parameter for auditLog', index: 3 },
+  { name: 'entity', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'entity parameter for auditLog', index: 3 },
+  { name: 'entity', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'entity parameter for auditLog', index: 3 },
+  { name: 'entity', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'entity parameter for auditLog', index: 3 },
+  { name: 'entity', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'entity parameter for auditLog', index: 3 },
+  { name: 'entityMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum entity filter for auditLog', index: 3 },
+  { name: 'entityMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum entity filter for auditLog', index: 3 },
+  { name: 'entityId', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'entityId parameter for auditLog', index: 4 },
+  { name: 'entityId', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'entityId parameter for auditLog', index: 4 },
+  { name: 'entityId', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'entityId parameter for auditLog', index: 4 },
+  { name: 'entityId', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'entityId parameter for auditLog', index: 4 },
+  { name: 'entityId', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'entityId parameter for auditLog', index: 4 },
+  { name: 'entityIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum entityId filter for auditLog', index: 4 },
+  { name: 'entityIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum entityId filter for auditLog', index: 4 },
+  { name: 'before', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'before parameter for auditLog', index: 5 },
+  { name: 'before', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'before parameter for auditLog', index: 5 },
+  { name: 'before', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'before parameter for auditLog', index: 5 },
+  { name: 'before', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'before parameter for auditLog', index: 5 },
+  { name: 'before', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'before parameter for auditLog', index: 5 },
+  { name: 'beforeMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum before filter for auditLog', index: 5 },
+  { name: 'beforeMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum before filter for auditLog', index: 5 },
+  { name: 'after', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'after parameter for auditLog', index: 6 },
+  { name: 'after', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'after parameter for auditLog', index: 6 },
+  { name: 'after', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'after parameter for auditLog', index: 6 },
+  { name: 'after', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'after parameter for auditLog', index: 6 },
+  { name: 'after', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'after parameter for auditLog', index: 6 },
+  { name: 'afterMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum after filter for auditLog', index: 6 },
+  { name: 'afterMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum after filter for auditLog', index: 6 },
+  { name: 'ipAddress', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'ipAddress parameter for auditLog', index: 7 },
+  { name: 'ipAddress', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'ipAddress parameter for auditLog', index: 7 },
+  { name: 'ipAddress', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'ipAddress parameter for auditLog', index: 7 },
+  { name: 'ipAddress', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'ipAddress parameter for auditLog', index: 7 },
+  { name: 'ipAddress', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'ipAddress parameter for auditLog', index: 7 },
+  { name: 'ipAddressMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum ipAddress filter for auditLog', index: 7 },
+  { name: 'ipAddressMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum ipAddress filter for auditLog', index: 7 },
+  { name: 'userAgent', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'userAgent parameter for auditLog', index: 8 },
+  { name: 'userAgent', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'userAgent parameter for auditLog', index: 8 },
+  { name: 'userAgent', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'userAgent parameter for auditLog', index: 8 },
+  { name: 'userAgent', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'userAgent parameter for auditLog', index: 8 },
+  { name: 'userAgent', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'userAgent parameter for auditLog', index: 8 },
+  { name: 'userAgentMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum userAgent filter for auditLog', index: 8 },
+  { name: 'userAgentMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum userAgent filter for auditLog', index: 8 },
+  { name: 'at', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'at parameter for auditLog', index: 9 },
+  { name: 'at', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'at parameter for auditLog', index: 9 },
+  { name: 'at', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'at parameter for auditLog', index: 9 },
+  { name: 'at', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'at parameter for auditLog', index: 9 },
+  { name: 'at', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'at parameter for auditLog', index: 9 },
+  { name: 'atMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum at filter for auditLog', index: 9 },
+  { name: 'atMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum at filter for auditLog', index: 9 },
+];
+
+function get(name){return parameters.find(p=>p.name===name)||null;}
+function list(mode){return mode?parameters.filter(p=>p.mode===mode):[...parameters];}
+function required(){return parameters.filter(p=>p.required);}
+function validateParameter(name,value){const p=get(name);if(!p)return {ok:false,code:'UNKNOWN_PARAMETER'};if(value===null&&p.nullable)return {ok:true};if(p.type==='number'&&typeof value!=='number')return {ok:false,code:'TYPE_ERROR'};if(p.type==='boolean'&&typeof value!=='boolean')return {ok:false,code:'TYPE_ERROR'};if(p.type==='string'&&typeof value!=='string')return {ok:false,code:'TYPE_ERROR'};return {ok:true};}
+function validateObject(input={}){const errors=[];for(const p of required()){if(input[p.name]===undefined||input[p.name]===null||input[p.name]==='')errors.push({field:p.name,code:'REQUIRED'});}for(const [k,v] of Object.entries(input)){const result=validateParameter(k,v);if(!result.ok)errors.push({field:k,code:result.code});}return errors;}
+function defaults(){return Object.fromEntries(parameters.filter(p=>p.defaultValue!==null).map(p=>[p.name,p.defaultValue]));}
+function describe(){return {entity,parameterCount:parameters.length,parameters};}
+module.exports={entity,parameters,get,list,required,validateParameter,validateObject,defaults,describe};

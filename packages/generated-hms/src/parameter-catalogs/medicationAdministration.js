@@ -1,0 +1,77 @@
+'use strict';
+// Complete parameter catalog for medicationAdministration.
+const entity='medicationAdministration';
+const parameters=[
+  { name: 'patientId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for medicationAdministration', index: 1 },
+  { name: 'patientId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for medicationAdministration', index: 1 },
+  { name: 'patientId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'patientId parameter for medicationAdministration', index: 1 },
+  { name: 'patientId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for medicationAdministration', index: 1 },
+  { name: 'patientId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'patientId parameter for medicationAdministration', index: 1 },
+  { name: 'patientIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum patientId filter for medicationAdministration', index: 1 },
+  { name: 'patientIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum patientId filter for medicationAdministration', index: 1 },
+  { name: 'prescriptionId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'prescriptionId parameter for medicationAdministration', index: 2 },
+  { name: 'prescriptionId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'prescriptionId parameter for medicationAdministration', index: 2 },
+  { name: 'prescriptionId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'prescriptionId parameter for medicationAdministration', index: 2 },
+  { name: 'prescriptionId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'prescriptionId parameter for medicationAdministration', index: 2 },
+  { name: 'prescriptionId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'prescriptionId parameter for medicationAdministration', index: 2 },
+  { name: 'prescriptionIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum prescriptionId filter for medicationAdministration', index: 2 },
+  { name: 'prescriptionIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum prescriptionId filter for medicationAdministration', index: 2 },
+  { name: 'medicineId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'medicineId parameter for medicationAdministration', index: 3 },
+  { name: 'medicineId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'medicineId parameter for medicationAdministration', index: 3 },
+  { name: 'medicineId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'medicineId parameter for medicationAdministration', index: 3 },
+  { name: 'medicineId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'medicineId parameter for medicationAdministration', index: 3 },
+  { name: 'medicineId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'medicineId parameter for medicationAdministration', index: 3 },
+  { name: 'medicineIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum medicineId filter for medicationAdministration', index: 3 },
+  { name: 'medicineIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum medicineId filter for medicationAdministration', index: 3 },
+  { name: 'dose', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'dose parameter for medicationAdministration', index: 4 },
+  { name: 'dose', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'dose parameter for medicationAdministration', index: 4 },
+  { name: 'dose', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'dose parameter for medicationAdministration', index: 4 },
+  { name: 'dose', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'dose parameter for medicationAdministration', index: 4 },
+  { name: 'dose', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'dose parameter for medicationAdministration', index: 4 },
+  { name: 'doseMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum dose filter for medicationAdministration', index: 4 },
+  { name: 'doseMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum dose filter for medicationAdministration', index: 4 },
+  { name: 'route', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'route parameter for medicationAdministration', index: 5 },
+  { name: 'route', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'route parameter for medicationAdministration', index: 5 },
+  { name: 'route', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'route parameter for medicationAdministration', index: 5 },
+  { name: 'route', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'route parameter for medicationAdministration', index: 5 },
+  { name: 'route', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'route parameter for medicationAdministration', index: 5 },
+  { name: 'routeMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum route filter for medicationAdministration', index: 5 },
+  { name: 'routeMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum route filter for medicationAdministration', index: 5 },
+  { name: 'administeredAt', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredAt parameter for medicationAdministration', index: 6 },
+  { name: 'administeredAt', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredAt parameter for medicationAdministration', index: 6 },
+  { name: 'administeredAt', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'administeredAt parameter for medicationAdministration', index: 6 },
+  { name: 'administeredAt', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredAt parameter for medicationAdministration', index: 6 },
+  { name: 'administeredAt', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'administeredAt parameter for medicationAdministration', index: 6 },
+  { name: 'administeredAtMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum administeredAt filter for medicationAdministration', index: 6 },
+  { name: 'administeredAtMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum administeredAt filter for medicationAdministration', index: 6 },
+  { name: 'administeredBy', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredBy parameter for medicationAdministration', index: 7 },
+  { name: 'administeredBy', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredBy parameter for medicationAdministration', index: 7 },
+  { name: 'administeredBy', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'administeredBy parameter for medicationAdministration', index: 7 },
+  { name: 'administeredBy', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'administeredBy parameter for medicationAdministration', index: 7 },
+  { name: 'administeredBy', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'administeredBy parameter for medicationAdministration', index: 7 },
+  { name: 'administeredByMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum administeredBy filter for medicationAdministration', index: 7 },
+  { name: 'administeredByMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum administeredBy filter for medicationAdministration', index: 7 },
+  { name: 'status', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for medicationAdministration', index: 8 },
+  { name: 'status', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for medicationAdministration', index: 8 },
+  { name: 'status', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for medicationAdministration', index: 8 },
+  { name: 'status', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for medicationAdministration', index: 8 },
+  { name: 'status', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for medicationAdministration', index: 8 },
+  { name: 'statusMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum status filter for medicationAdministration', index: 8 },
+  { name: 'statusMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum status filter for medicationAdministration', index: 8 },
+  { name: 'reason', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'reason parameter for medicationAdministration', index: 9 },
+  { name: 'reason', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'reason parameter for medicationAdministration', index: 9 },
+  { name: 'reason', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'reason parameter for medicationAdministration', index: 9 },
+  { name: 'reason', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'reason parameter for medicationAdministration', index: 9 },
+  { name: 'reason', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'reason parameter for medicationAdministration', index: 9 },
+  { name: 'reasonMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum reason filter for medicationAdministration', index: 9 },
+  { name: 'reasonMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum reason filter for medicationAdministration', index: 9 },
+];
+
+function get(name){return parameters.find(p=>p.name===name)||null;}
+function list(mode){return mode?parameters.filter(p=>p.mode===mode):[...parameters];}
+function required(){return parameters.filter(p=>p.required);}
+function validateParameter(name,value){const p=get(name);if(!p)return {ok:false,code:'UNKNOWN_PARAMETER'};if(value===null&&p.nullable)return {ok:true};if(p.type==='number'&&typeof value!=='number')return {ok:false,code:'TYPE_ERROR'};if(p.type==='boolean'&&typeof value!=='boolean')return {ok:false,code:'TYPE_ERROR'};if(p.type==='string'&&typeof value!=='string')return {ok:false,code:'TYPE_ERROR'};return {ok:true};}
+function validateObject(input={}){const errors=[];for(const p of required()){if(input[p.name]===undefined||input[p.name]===null||input[p.name]==='')errors.push({field:p.name,code:'REQUIRED'});}for(const [k,v] of Object.entries(input)){const result=validateParameter(k,v);if(!result.ok)errors.push({field:k,code:result.code});}return errors;}
+function defaults(){return Object.fromEntries(parameters.filter(p=>p.defaultValue!==null).map(p=>[p.name,p.defaultValue]));}
+function describe(){return {entity,parameterCount:parameters.length,parameters};}
+module.exports={entity,parameters,get,list,required,validateParameter,validateObject,defaults,describe};

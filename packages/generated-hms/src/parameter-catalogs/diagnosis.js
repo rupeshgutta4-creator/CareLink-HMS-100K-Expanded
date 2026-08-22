@@ -1,0 +1,77 @@
+'use strict';
+// Complete parameter catalog for diagnosis.
+const entity='diagnosis';
+const parameters=[
+  { name: 'patientId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for diagnosis', index: 1 },
+  { name: 'patientId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for diagnosis', index: 1 },
+  { name: 'patientId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'patientId parameter for diagnosis', index: 1 },
+  { name: 'patientId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'patientId parameter for diagnosis', index: 1 },
+  { name: 'patientId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'patientId parameter for diagnosis', index: 1 },
+  { name: 'patientIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum patientId filter for diagnosis', index: 1 },
+  { name: 'patientIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum patientId filter for diagnosis', index: 1 },
+  { name: 'visitId', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'visitId parameter for diagnosis', index: 2 },
+  { name: 'visitId', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'visitId parameter for diagnosis', index: 2 },
+  { name: 'visitId', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'visitId parameter for diagnosis', index: 2 },
+  { name: 'visitId', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'visitId parameter for diagnosis', index: 2 },
+  { name: 'visitId', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'visitId parameter for diagnosis', index: 2 },
+  { name: 'visitIdMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum visitId filter for diagnosis', index: 2 },
+  { name: 'visitIdMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum visitId filter for diagnosis', index: 2 },
+  { name: 'code', mode: 'input', type: 'string', required: true, nullable: true, defaultValue: null, description: 'code parameter for diagnosis', index: 3 },
+  { name: 'code', mode: 'filter', type: 'string', required: true, nullable: true, defaultValue: null, description: 'code parameter for diagnosis', index: 3 },
+  { name: 'code', mode: 'sort', type: 'string', required: true, nullable: true, defaultValue: false, description: 'code parameter for diagnosis', index: 3 },
+  { name: 'code', mode: 'search', type: 'string', required: true, nullable: true, defaultValue: null, description: 'code parameter for diagnosis', index: 3 },
+  { name: 'code', mode: 'export', type: 'string', required: true, nullable: true, defaultValue: false, description: 'code parameter for diagnosis', index: 3 },
+  { name: 'codeMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum code filter for diagnosis', index: 3 },
+  { name: 'codeMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum code filter for diagnosis', index: 3 },
+  { name: 'description', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'description parameter for diagnosis', index: 4 },
+  { name: 'description', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'description parameter for diagnosis', index: 4 },
+  { name: 'description', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'description parameter for diagnosis', index: 4 },
+  { name: 'description', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'description parameter for diagnosis', index: 4 },
+  { name: 'description', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'description parameter for diagnosis', index: 4 },
+  { name: 'descriptionMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum description filter for diagnosis', index: 4 },
+  { name: 'descriptionMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum description filter for diagnosis', index: 4 },
+  { name: 'onsetDate', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'onsetDate parameter for diagnosis', index: 5 },
+  { name: 'onsetDate', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'onsetDate parameter for diagnosis', index: 5 },
+  { name: 'onsetDate', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'onsetDate parameter for diagnosis', index: 5 },
+  { name: 'onsetDate', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'onsetDate parameter for diagnosis', index: 5 },
+  { name: 'onsetDate', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'onsetDate parameter for diagnosis', index: 5 },
+  { name: 'onsetDateMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum onsetDate filter for diagnosis', index: 5 },
+  { name: 'onsetDateMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum onsetDate filter for diagnosis', index: 5 },
+  { name: 'severity', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'severity parameter for diagnosis', index: 6 },
+  { name: 'severity', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'severity parameter for diagnosis', index: 6 },
+  { name: 'severity', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'severity parameter for diagnosis', index: 6 },
+  { name: 'severity', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'severity parameter for diagnosis', index: 6 },
+  { name: 'severity', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'severity parameter for diagnosis', index: 6 },
+  { name: 'severityMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum severity filter for diagnosis', index: 6 },
+  { name: 'severityMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum severity filter for diagnosis', index: 6 },
+  { name: 'status', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for diagnosis', index: 7 },
+  { name: 'status', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for diagnosis', index: 7 },
+  { name: 'status', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for diagnosis', index: 7 },
+  { name: 'status', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'status parameter for diagnosis', index: 7 },
+  { name: 'status', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'status parameter for diagnosis', index: 7 },
+  { name: 'statusMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum status filter for diagnosis', index: 7 },
+  { name: 'statusMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum status filter for diagnosis', index: 7 },
+  { name: 'notes', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'notes parameter for diagnosis', index: 8 },
+  { name: 'notes', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'notes parameter for diagnosis', index: 8 },
+  { name: 'notes', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'notes parameter for diagnosis', index: 8 },
+  { name: 'notes', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'notes parameter for diagnosis', index: 8 },
+  { name: 'notes', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'notes parameter for diagnosis', index: 8 },
+  { name: 'notesMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum notes filter for diagnosis', index: 8 },
+  { name: 'notesMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum notes filter for diagnosis', index: 8 },
+  { name: 'recordedBy', mode: 'input', type: 'string', required: false, nullable: true, defaultValue: null, description: 'recordedBy parameter for diagnosis', index: 9 },
+  { name: 'recordedBy', mode: 'filter', type: 'string', required: false, nullable: true, defaultValue: null, description: 'recordedBy parameter for diagnosis', index: 9 },
+  { name: 'recordedBy', mode: 'sort', type: 'string', required: false, nullable: true, defaultValue: false, description: 'recordedBy parameter for diagnosis', index: 9 },
+  { name: 'recordedBy', mode: 'search', type: 'string', required: false, nullable: true, defaultValue: null, description: 'recordedBy parameter for diagnosis', index: 9 },
+  { name: 'recordedBy', mode: 'export', type: 'string', required: false, nullable: true, defaultValue: false, description: 'recordedBy parameter for diagnosis', index: 9 },
+  { name: 'recordedByMin', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Minimum recordedBy filter for diagnosis', index: 9 },
+  { name: 'recordedByMax', mode: 'range', type: 'string', required: false, nullable: true, defaultValue: null, description: 'Maximum recordedBy filter for diagnosis', index: 9 },
+];
+
+function get(name){return parameters.find(p=>p.name===name)||null;}
+function list(mode){return mode?parameters.filter(p=>p.mode===mode):[...parameters];}
+function required(){return parameters.filter(p=>p.required);}
+function validateParameter(name,value){const p=get(name);if(!p)return {ok:false,code:'UNKNOWN_PARAMETER'};if(value===null&&p.nullable)return {ok:true};if(p.type==='number'&&typeof value!=='number')return {ok:false,code:'TYPE_ERROR'};if(p.type==='boolean'&&typeof value!=='boolean')return {ok:false,code:'TYPE_ERROR'};if(p.type==='string'&&typeof value!=='string')return {ok:false,code:'TYPE_ERROR'};return {ok:true};}
+function validateObject(input={}){const errors=[];for(const p of required()){if(input[p.name]===undefined||input[p.name]===null||input[p.name]==='')errors.push({field:p.name,code:'REQUIRED'});}for(const [k,v] of Object.entries(input)){const result=validateParameter(k,v);if(!result.ok)errors.push({field:k,code:result.code});}return errors;}
+function defaults(){return Object.fromEntries(parameters.filter(p=>p.defaultValue!==null).map(p=>[p.name,p.defaultValue]));}
+function describe(){return {entity,parameterCount:parameters.length,parameters};}
+module.exports={entity,parameters,get,list,required,validateParameter,validateObject,defaults,describe};

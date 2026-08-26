@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path');let n=0,f=0;function walk(d){for(const x of fs.readdirSync(d)){const p=path.join(d,x),s=fs.statSync(p);if(s.isDirectory()&&!['node_modules','.git'].includes(x))walk(p);else if(/\.(js|jsx|ts|tsx|json|css|md)$/.test(x)){f++;n+=fs.readFileSync(p,'utf8').split(/\r?\n/).length-1;}}}walk(process.cwd());console.log({files:f,lines:n});

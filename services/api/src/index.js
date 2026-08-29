@@ -12,11 +12,13 @@ const { labRouter } = require('./routes/lab');
 const { pharmacyRouter } = require('./routes/pharmacy');
 const { adminRouter } = require('./routes/admin');
 const { errorHandler } = require('./middleware/errorHandler');
+const correlationMiddleware = require('./middleware/correlation');
 const { seedDemoData } = require('./utils/seed');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+app.use(correlationMiddleware);
 app.use(cors({ origin: process.env.CORS_ORIGIN || true }));
 app.use(express.json({ limit: '2mb' }));
 
